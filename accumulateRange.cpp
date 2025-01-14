@@ -23,7 +23,10 @@ void accumulateRange(uint64_t &sum, uint64_t start, uint64_t end)
 
 int main()
 {
-    const int num_threads = 5;
+    int num_threads;
+    std::cout << "Please enter the number of threads: ";
+    std::cin >> num_threads;
+    
     const int num_elements = 100;
     const int step = num_elements / num_threads;
 
